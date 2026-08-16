@@ -86,10 +86,19 @@ The statue can be used like a horn and carries the description **Lament**.
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/mournful_clay_statue.json`
 
+### Warding Stone
+
+Craft and place this stone for the Abbey / warding quest branch.
+
+![4 Chiseled Stone Bricks, 4 Glistering Melon Slice, and 1 Blaze Rod make Warding Stone](images/recipes/warding_stone.png)
+
+Source: `dev/snaxcraft-content-pack/datapack/data/snax_tools/recipe/warding_stone.json`
+
+See the [Abbey / warding branch](snaxcraft-quests.md#abbey--warding-branch).
+
 ## Credit and license
 
 NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.
-
 
 Recipes and assets adapted from Matcha Flavoured by **klei_wright**, licensed **CC-BY-NC-SA 4.0**.
 

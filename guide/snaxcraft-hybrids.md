@@ -1,8 +1,9 @@
-# snaxcraft hybrid tools
+﻿# snaxcraft hybrid tools
 
-**Edition:** Java  
-**Version:** 26.2 Paper  
-**Last verified:** 2026-08-14  
+**Edition:** Java<br>
+**Version:** 26.2 Paper<br>
+**Last verified:** 2026-08-15
+
 **Applies to:** snaxcraft server content
 
 ## What they do
@@ -12,28 +13,49 @@
 
 Hybrids combine two tool types in one slot, so you carry fewer tools. The trade is speed: a copper dolabra mines at 5 where a copper pickaxe mines at 6. Single-purpose tools are still there when you want the faster dig.
 
-Source: `dev/generated/matcha-flavoured-1.12/data/crafting/recipe/copper_dolabra.json`
-Source: `dev/generated/matcha-flavoured-1.12/data/crafting/recipe/copper_pickaxe.json`
-
 ## Crafting
 
-Copper, iron, and diamond versions use sticks plus the matching ingots or gems in a crafting table:
+Copper, iron, and diamond versions use sticks plus the matching ingots or gems in a crafting table. Patterns can be mirrored.
 
-| Tool | Top row | Middle row | Bottom row |
-|------|---------|------------|------------|
-| Dolabra | `XXX` | `X# ` | ` # ` |
-| Mattock | `XX ` | ` #X` | ` # ` |
+### Copper Dolabra
 
-`X` is a copper ingot, iron ingot, or diamond; `#` is a stick. The patterns can be mirrored.
+![4 Copper Ingot and 2 Stick make Copper Dolabra](images/recipes/copper_dolabra.png)
 
-Source: `dev/generated/matcha-flavoured-1.12/data/crafting/recipe/copper_dolabra.json`
-Source: `dev/generated/matcha-flavoured-1.12/data/crafting/recipe/iron_dolabra.json`
-Source: `dev/generated/matcha-flavoured-1.12/data/crafting/recipe/diamond_dolabra.json`
-Source: `dev/generated/matcha-flavoured-1.12/data/crafting/recipe/copper_mattock.json`
-Source: `dev/generated/matcha-flavoured-1.12/data/crafting/recipe/iron_mattock.json`
-Source: `dev/generated/matcha-flavoured-1.12/data/crafting/recipe/diamond_mattock.json`
+Source: `dev/snaxcraft-content-pack/datapack/data/snax_tools/recipe/copper_dolabra.json`
+
+### Copper Mattock
+
+![3 Copper Ingot and 2 Stick make Copper Mattock](images/recipes/copper_mattock.png)
+
+Source: `dev/snaxcraft-content-pack/datapack/data/snax_tools/recipe/copper_mattock.json`
+
+### Iron Dolabra
+
+![4 Iron Ingot and 2 Stick make Iron Dolabra](images/recipes/iron_dolabra.png)
+
+Source: `dev/snaxcraft-content-pack/datapack/data/snax_tools/recipe/iron_dolabra.json`
+
+### Iron Mattock
+
+![3 Iron Ingot and 2 Stick make Iron Mattock](images/recipes/iron_mattock.png)
+
+Source: `dev/snaxcraft-content-pack/datapack/data/snax_tools/recipe/iron_mattock.json`
+
+### Diamond Dolabra
+
+![4 Diamond and 2 Stick make Diamond Dolabra](images/recipes/diamond_dolabra.png)
+
+Source: `dev/snaxcraft-content-pack/datapack/data/snax_tools/recipe/diamond_dolabra.json`
+
+### Diamond Mattock
+
+![3 Diamond and 2 Stick make Diamond Mattock](images/recipes/diamond_mattock.png)
+
+Source: `dev/snaxcraft-content-pack/datapack/data/snax_tools/recipe/diamond_mattock.json`
 
 ## Credit and license
+
+NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.
 
 Hybrid recipes, behavior, and assets adapted from Matcha Flavoured by **klei_wright**, licensed **CC-BY-NC-SA 4.0**.
 
@@ -43,3 +65,4 @@ Source: https://modrinth.com/datapack/matcha-flavoured
 
 - [Quest Point shop](snaxcraft-qp-shop.md)
 - [Alloy equipment](snaxcraft-alloys.md)
+- [Crafting shortcuts](snaxcraft-shortcuts.md)

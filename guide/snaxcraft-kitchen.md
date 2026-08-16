@@ -1236,7 +1236,6 @@ Source: `server/plugins/Quests/storage/quests.yml`
 
 NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.
 
-
 Kitchen recipes and assets adapted from Matcha Flavoured by **klei_wright**, licensed **CC-BY-NC-SA 4.0**.
 
 Source: https://modrinth.com/datapack/matcha-flavoured
