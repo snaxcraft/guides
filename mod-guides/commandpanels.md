@@ -1,6 +1,6 @@
 # CommandPanels — ops
 
-**Last verified:** 2026-08-12  
+**Last verified:** 2026-08-16  
 **Host:** Cybrancee **Stone** (4GB) -- see `dev/host-profile.md`  
 **Jar:** Hangar **CommandPanels** build for Paper **26.1–26.2** (snaxcraft uses this — not DeluxeMenus)  
 **Folder:** `server/plugins/CommandPanels/`
@@ -64,6 +64,41 @@ Quest rewards use `pa data overwrite <player> snax_done_<id> 1` (dailies — `/q
 `/qc` history past completes: pull `Quests/data`, run `dev/scripts/backfill-qc-cp-data.ps1` or `write-qc-cp-data-from-quests.ps1` (ladder/Together IDs only), paste `dev/generated/qc-cp-backfill-commands.txt` in console.
 
 Source: `server/plugins/CommandPanels/lang.yml` (`data_usage`)
+
+## Click requirements vs item conditions
+
+These are two different parsers on **4.2.1**. Mixing them silently breaks a panel.
+
+| Key | Where | Syntax |
+|-----|-------|--------|
+| `conditions:` | item level (show/hide an item) | bare condition — `'%commandpanels_data_x% $EQUALS 1'` |
+| `requirements:` | inside `left-click:` / `right-click:` | **tag first**, then the argument — `'[conditions] %quests_player_quest_points% $ATLEAST 20'` |
+
+Every `requirements:` entry must begin with one of `[conditions]`, `[xp]`,
+`[item]`, `[data]`, `[vault]`. The runner reads the first whitespace-delimited
+token as the tag; anything else prints **"Unknown requirement tag"** in chat and
+the click aborts — the `fail:` commands do not run either, so it looks like a
+dead button.
+
+Condition operators (valid only inside a condition string): `$EQUALS`,
+`$ATLEAST`, `$HASPERM`, combined with `$AND`, `$OR`, `$NOT` and parentheses.
+
+QP shop buy pattern:
+
+```yaml
+left-click:
+  requirements:
+  - '[conditions] %quests_player_quest_points% $ATLEAST 20'
+  fail:
+    commands:
+    - '[msg] &cNot enough Quest Points (need 20).'
+  commands:
+  - '[console] questadmin takepoints %player_name% 20'
+  - '[console] minecraft:give %player_name% grass_block 64'
+```
+
+Source: `server/plugins/CommandPanels/panels/qp-blocks-building.yml`  
+Source: `server/plugins/CommandPanels/lang.yml` (`requirement_unknown_tag`)
 
 ## Tab settings
 

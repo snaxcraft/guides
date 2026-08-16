@@ -2,7 +2,7 @@
 
 **Edition:** Java<br>
 **Version:** 26.2 Paper<br>
-**Last verified:** 2026-08-15
+**Last verified:** 2026-08-16
 
 **Applies to:** snaxcraft server content
 
@@ -15,43 +15,47 @@ Hybrids combine two tool types in one slot, so you carry fewer tools. The trade 
 
 ## Crafting
 
-Copper, iron, and diamond versions use sticks plus the matching ingots or gems in a crafting table. Patterns can be mirrored.
+These are normal **crafting table** recipes, not smithing. Copper, iron, and diamond versions use sticks plus the matching ingots or gems.
+
+Each image below shows the 3x3 crafting grid on the left and what you get on the right. Empty squares in the image must stay empty in your grid. The pattern can be mirrored left to right.
+
+Source: https://minecraft.wiki/w/Crafting_Table
 
 ### Copper Dolabra
 
 ![4 Copper Ingot and 2 Stick make Copper Dolabra](images/recipes/copper_dolabra.png)
 
-Source: `dev/snaxcraft-content-pack/datapack/data/snax_tools/recipe/copper_dolabra.json`
+**Stats:** Mining Speed 5, Damage 5, Attack Speed 0.8.
 
 ### Copper Mattock
 
 ![3 Copper Ingot and 2 Stick make Copper Mattock](images/recipes/copper_mattock.png)
 
-Source: `dev/snaxcraft-content-pack/datapack/data/snax_tools/recipe/copper_mattock.json`
+**Stats:** Mining Speed 5, Damage 1, Attack Speed 2.
 
 ### Iron Dolabra
 
 ![4 Iron Ingot and 2 Stick make Iron Dolabra](images/recipes/iron_dolabra.png)
 
-Source: `dev/snaxcraft-content-pack/datapack/data/snax_tools/recipe/iron_dolabra.json`
+**Stats:** Mining Speed 6, Damage 6, Attack Speed 0.9.
 
 ### Iron Mattock
 
 ![3 Iron Ingot and 2 Stick make Iron Mattock](images/recipes/iron_mattock.png)
 
-Source: `dev/snaxcraft-content-pack/datapack/data/snax_tools/recipe/iron_mattock.json`
+**Stats:** Mining Speed 6, Damage 4, Attack Speed 3.
 
 ### Diamond Dolabra
 
 ![4 Diamond and 2 Stick make Diamond Dolabra](images/recipes/diamond_dolabra.png)
 
-Source: `dev/snaxcraft-content-pack/datapack/data/snax_tools/recipe/diamond_dolabra.json`
+**Stats:** Mining Speed 8, Damage 7, Attack Speed 1.
 
 ### Diamond Mattock
 
 ![3 Diamond and 2 Stick make Diamond Mattock](images/recipes/diamond_mattock.png)
 
-Source: `dev/snaxcraft-content-pack/datapack/data/snax_tools/recipe/diamond_mattock.json`
+**Stats:** Mining Speed 8, Damage 4, Attack Speed 3.
 
 ## Credit and license
 
