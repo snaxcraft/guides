@@ -1,8 +1,8 @@
-# snaxcraft crafting and material shortcuts
+﻿# snaxcraft crafting and material shortcuts
 
 **Edition:** Java  
 **Version:** 26.2 Paper  
-**Last verified:** 2026-08-15  
+**Last verified:** 2026-08-15
 **Applies to:** snaxcraft server content
 
 These non-food recipes make common building, storage, and decorative items easier to obtain. Food recipes are in the [snaxcraft kitchen cookbook](snaxcraft-kitchen.md).
@@ -11,25 +11,27 @@ These non-food recipes make common building, storage, and decorative items easie
 
 ### Cobblestone or cobbled deepslate to gravel
 
-Put **1 Cobblestone or 1 Cobbled Deepslate** in a blast furnace to make **1 Gravel**.
+Blast **1 Cobblestone or 1 Cobbled Deepslate** into **1 Gravel**.
 
 **Time:** 5 seconds  
 **Experience:** 0.1
+
+![1 Cobbled Deepslate cooks into Gravel](images/recipes/gravel_from_blasting_cobble.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/gravel_from_blasting_cobble.json`
 
 ### Gravel to sand
 
-Put **1 Gravel** in a blast furnace to make **1 Sand**.
+Blast **1 Gravel** into **1 Sand**.
 
 **Time:** 5 seconds  
 **Experience:** 0.1
 
 Together, the two blasting recipes make this chain:
 
-```text
 Cobblestone or Cobbled Deepslate -> Gravel -> Sand
-```
+
+![1 Gravel cooks into Sand](images/recipes/sand_from_blasting_gravel.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/sand_from_blasting_gravel.json`
 
@@ -37,45 +39,28 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/sand_from_blasting
 
 ### Leather shulker box
 
-Surround a Chest with 8 Leather to make **1 Shulker Box**:
-
-```text
-LLL
-LCL
-LLL
-```
-
-`L` = Leather and `C` = Chest.
+Craft **1 Shulker Box** from a Chest and Leather:
 
 This is an extra shortcut. The vanilla recipe with two Shulker Shells and a Chest still works.
+
+![8 Leather and 1 Chest make Shulker Box](images/recipes/leather_shulker_box.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/leather_shulker_box.json`
 Source: https://minecraft.wiki/w/Shulker_Box
 
 ### Four chests from logs
 
-Use 8 Logs in the normal chest outline to make **4 Chests**:
+Craft **4 Chests** from Logs:
 
-```text
-LLL
-L L
-LLL
-```
-
-`L` = any item in the Logs item tag, including supported log and stem types.
+![8 Oak Log make 4 Chest](images/recipes/chest_from_logs.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/chest_from_logs.json`
 
 ### Prismarine from calcite and raw copper
 
-Use a 2x2 checker pattern to make **4 Prismarine**:
+Craft **4 Prismarine** from Calcite and Raw Copper:
 
-```text
-CR
-RC
-```
-
-`C` = Calcite and `R` = Raw Copper. The pattern can occupy any 2x2 corner of the crafting table.
+![2 Calcite and 2 Raw Copper make 4 Prismarine](images/recipes/prismarine_from_calcite.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/prismarine_from_calcite.json`
 
@@ -83,21 +68,28 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/prismarine_from_ca
 
 ### Cheerful clay statue
 
-Craft **4 Clay Balls + 1 Yellow Dye** shapelessly to make **1 Cheerful Clay Statue**.
+Craft **1 Cheerful Clay Statue**.
 
 The statue can be used like a horn and carries the description **Rejoice**.
+
+![4 Clay Ball and 1 Yellow Dye make Cheerful Clay Statue](images/recipes/cheerful_clay_statue.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cheerful_clay_statue.json`
 
 ### Mournful clay statue
 
-Craft **4 Clay Balls + 1 Black Dye** shapelessly to make **1 Mournful Clay Statue**.
+Craft **1 Mournful Clay Statue**.
 
 The statue can be used like a horn and carries the description **Lament**.
+
+![4 Clay Ball and 1 Black Dye make Mournful Clay Statue](images/recipes/mournful_clay_statue.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/mournful_clay_statue.json`
 
 ## Credit and license
+
+NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.
+
 
 Recipes and assets adapted from Matcha Flavoured by **klei_wright**, licensed **CC-BY-NC-SA 4.0**.
 

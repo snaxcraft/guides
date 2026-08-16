@@ -1,4 +1,4 @@
-# snaxcraft guides
+﻿# snaxcraft guides
 
 Guides for the snaxcraft Minecraft: Java Edition co-op server.
 
@@ -13,3 +13,5 @@ See [`mod-guides/`](mod-guides/) for operator notes about the Paper plugins used
 These files are published from the server's private canonical repository. Server configuration, worlds, credentials, and operational scripts are intentionally not public.
 
 The separately hosted server resource pack lives at [snaxcraft/resourcePack](https://github.com/snaxcraft/resourcePack).
+
+NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.
