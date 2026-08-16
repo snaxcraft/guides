@@ -6,7 +6,7 @@
 **Applies to:** `plugins/Quests/storage/quests.yml` (branched progression)  
 **Plugin guide:** [`mod-guides/quests-classic.md`](../mod-guides/quests-classic.md)
 
-Optional side content: [dailies](snaxcraft-dailies.md), [QP shop](snaxcraft-qp-shop.md), [kitchen recipes](snaxcraft-kitchen.md), [hybrid tools](snaxcraft-hybrids.md), and [alloy equipment](snaxcraft-alloys.md). Separate from this ladder. **`/qc`** = completed ladder/Together history (not dailies).
+Optional side content: [dailies](snaxcraft-dailies.md), [QP shop](snaxcraft-qp-shop.md), [kitchen recipes](snaxcraft-kitchen.md), [crafting and material shortcuts](snaxcraft-shortcuts.md), [hybrid tools](snaxcraft-hybrids.md), and [alloy equipment](snaxcraft-alloys.md). Separate from this ladder. **`/qc`** = completed ladder/Together history (not dailies).
 
 ## Summary
 
@@ -318,7 +318,7 @@ Source: `dev/quests-branch-map.json`
 
 **Plant Wheat** -> Bake Bread -> Cook Steak -> Make Jam -> Cook Curry -> Blast Gravel -> Blast Sand -> Leather Shulker -> Calcite Prismarine -> Log Chests -> Clay Statue.
 
-Uses custom recipes where available: flour from wheat, jam from berries (shows as poisonous potato), leather shulkers (8 leather + chest), calcite prismarine (calcite + raw copper), clay statues (clay -> goat horn). Vanilla alternatives remain available.
+Use the [kitchen cookbook](snaxcraft-kitchen.md) for flour, jam, and curry. The later material crafts are in [crafting and material shortcuts](snaxcraft-shortcuts.md). Vanilla alternatives remain available where noted in those guides.
 
 Source: `dev/kitchen-chain.json`  
 Source: `mod-guides/snax-kitchen.md`
@@ -555,6 +555,7 @@ Source: `server/plugins/Quests/storage/quests.yml`
 - [Dailies](snaxcraft-dailies.md)
 - [Quest Point shop](snaxcraft-qp-shop.md)
 - [Kitchen recipes](snaxcraft-kitchen.md)
+- [Crafting and material shortcuts](snaxcraft-shortcuts.md)
 - [Hybrid tools](snaxcraft-hybrids.md)
 - [Alloy equipment](snaxcraft-alloys.md)
 - Modrinth Quests Classic: https://modrinth.com/plugin/quests.classic
