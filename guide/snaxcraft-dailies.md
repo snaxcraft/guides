@@ -1,6 +1,6 @@
 # snaxcraft dailies + Quest Point shop
 
-**Last verified:** 2026-08-14 (9-day cycle, 108 dailies, bread smelt, Kitchen chain)  
+**Last verified:** 2026-08-16 (9-day cycle, 108 dailies, harvest replant, bread smelt, Kitchen chain)  
 **Applies to:** Paper 26.2 / Quests Classic 5.3.2 / CommandPanels / TAB  
 **Edition:** Java only
 
@@ -36,13 +36,15 @@ Each command opens a different list:
 - **Rewards:** QP + exp + items scaled to difficulty (easy/medium/hard/shared) — below `/qp` god-roll.
 - **Daily QP:** easy **6** · medium **10** · hard **16** · shared **24**.
 - **Bread quests:** bread dailies count **smelting**, not crafting — bake dough in a furnace.
+- **Harvest crops:** only **fully grown** crops count — break them at full size. Replanting afterward is fine and does not take progress away.
 - **Auto-give:** today’s 12 are handed to you at the **7:00 PM Pacific** reset, or when you next log in if you were offline.
 - **Backup:** if your dailies are missing, take them from **`/qd`**. That is normal on your very first join.
 - Together quests only start arriving after you finish **Gotta Start Somewhere**.
 - Unfinished dailies drop when the board swaps, so finish them before 7:00 PM Pacific.
 
 Source: `server/plugins/Quests/storage/quests.yml`  
-Source: https://pikamug.gitbook.io/quests/beginner/planner
+Source: https://pikamug.gitbook.io/quests/beginner/planner  
+Source: https://pikamug.gitbook.io/quests/beginner/options
 
 ## QP shop (`/qp`)
 

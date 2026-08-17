@@ -2,7 +2,7 @@
 
 **Edition:** Java  
 **Version:** 26.2 Paper  
-**Last verified:** 2026-08-11  
+**Last verified:** 2026-08-16  
 **Applies to:** `Quests` (`Quests-5.3.2.jar` — PikaMug **Quests Classic**)  
 **Host:** Cybrancee **Stone** (4GB) — see `dev/host-profile.md`
 
@@ -124,7 +124,7 @@ Source: https://pikamug.gitbook.io/quests/setup/configuration.md
 ### Regenerating ladder and daily content
 
 1. After YAML edits prefer regenerating with `dev/scripts/gen-quests-progression.ps1` then `gen-daily-quests.ps1` (backs up `quests.yml`). Progression rebuilds ladder + Together and drops generated dailies, so the daily generator must run second to merge all 108 back.
-2. `/questadmin reload` or full restart. ItemStacks need `v: 4903`. Place stages need `place-block-durability` beside `place-block-names`, or Quests rejects the whole quest.
+2. `/questadmin reload` or full restart. ItemStacks need `v: 4903`. Place stages need `place-block-durability` beside `place-block-names`, or Quests rejects the whole quest. Crop harvest/plant stages need `ignore-block-replace: false` or replanting undoes break progress (Quests 5.3.2 default is true). On a crop, `break-block-durability` is the **growth age** matched exactly — a harvest stage needs the mature age (7 for wheat/carrots/potatoes), not `0`.
 3. Do **not** install JoinCommands (Paper 26.2 unsupported). Globals unlock from the starter.
 4. Branch order source of truth: `dev/quests-branch-map.json`. Global chains: `dev/quests-global-chains.json`. Reward tables: `dev/quest-item-rewards.json`. `/qc` panels: `dev/scripts/gen-qc-panels.ps1`.
 5. `/qc` done icons use `pa data overwrite <player> snax_qc_<id> 1` on complete (CommandPanels 4.2.1; not PAPI `has_completed`). Past completes: `dev/scripts/backfill-qc-cp-data.ps1` then paste console output. Keep the PAPI Quests expansion updated (`/papi ecloud download Quests`) for Tab/compass placeholders.

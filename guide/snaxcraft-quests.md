@@ -2,7 +2,7 @@
 
 **Edition:** Java  
 **Version:** 26.2 Paper  
-**Last verified:** 2026-08-14 (Kitchen + Hybrids + Alloys + Fisher + Abbey branches, Together loops)
+**Last verified:** 2026-08-16 (Kitchen + Hybrids + Alloys + Fisher + Abbey branches, Together loops, crop replant)
 **Applies to:** `plugins/Quests/storage/quests.yml` (branched progression)  
 **Plugin guide:** [`mod-guides/quests-classic.md`](../mod-guides/quests-classic.md)
 
@@ -19,7 +19,7 @@ Full catalog: **296** quests - starter + **166** personal tips across **15** bra
 
 Locked personal quests are **hidden** from `/quests list` (`ignore-locked-quests: true`) until unlocked. You do not browse ahead - finish the current tip and the next one is given.
 
-**Doable objectives:** Quests Classic `items-to-craft` only counts the **crafting table** (not smithing, not filling buckets, not drops). Ladder crafts must be real table recipes. Plant crops with `place-block-names` using the **block** id (`WHEAT` when planting wheat seeds).
+**Doable objectives:** Quests Classic `items-to-craft` only counts the **crafting table** (not smithing, not filling buckets, not drops). Ladder crafts must be real table recipes. Plant crops with `place-block-names` using the **block** id (`WHEAT` when planting wheat seeds). Harvest goals count **fully grown** crops only, and keep progress when you replant afterward.
 
 Source: https://minecraft.wiki/w/Wheat_Seeds  
 Source: https://minecraft.wiki/w/Smithing  
