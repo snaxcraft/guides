@@ -2,7 +2,7 @@
 
 **Edition:** Java<br>
 **Version:** 26.2 Paper<br>
-**Last verified:** 2026-08-16
+**Last verified:** 2026-08-17
 
 **Applies to:** snaxcraft server content
 
@@ -17,11 +17,13 @@ Hybrids combine two tool types in one slot, so you carry fewer tools. The trade 
 
 These are normal **crafting table** recipes, not smithing. Copper, iron, and diamond versions use sticks plus the matching ingots or gems.
 
-Each image below shows the 3x3 crafting grid on the left and what you get on the right. Empty squares in the image must stay empty in your grid. The pattern can be mirrored left to right.
+Each recipe lists **Ingredients** in player item names. The image shows the 3x3 crafting grid on the left and what you get on the right. Empty squares in the image must stay empty in your grid. The pattern can be mirrored left to right.
 
 Source: https://minecraft.wiki/w/Crafting_Table
 
 ### Copper Dolabra
+
+**Ingredients:** 4 Copper Ingot and 2 Stick
 
 ![4 Copper Ingot and 2 Stick make Copper Dolabra](images/recipes/copper_dolabra.png)
 
@@ -29,11 +31,15 @@ Source: https://minecraft.wiki/w/Crafting_Table
 
 ### Copper Mattock
 
+**Ingredients:** 3 Copper Ingot and 2 Stick
+
 ![3 Copper Ingot and 2 Stick make Copper Mattock](images/recipes/copper_mattock.png)
 
 **Stats:** Mining Speed 5, Damage 1, Attack Speed 2.
 
 ### Iron Dolabra
+
+**Ingredients:** 4 Iron Ingot and 2 Stick
 
 ![4 Iron Ingot and 2 Stick make Iron Dolabra](images/recipes/iron_dolabra.png)
 
@@ -41,17 +47,23 @@ Source: https://minecraft.wiki/w/Crafting_Table
 
 ### Iron Mattock
 
+**Ingredients:** 3 Iron Ingot and 2 Stick
+
 ![3 Iron Ingot and 2 Stick make Iron Mattock](images/recipes/iron_mattock.png)
 
 **Stats:** Mining Speed 6, Damage 4, Attack Speed 3.
 
 ### Diamond Dolabra
 
+**Ingredients:** 4 Diamond and 2 Stick
+
 ![4 Diamond and 2 Stick make Diamond Dolabra](images/recipes/diamond_dolabra.png)
 
 **Stats:** Mining Speed 8, Damage 7, Attack Speed 1.
 
 ### Diamond Mattock
+
+**Ingredients:** 3 Diamond and 2 Stick
 
 ![3 Diamond and 2 Stick make Diamond Mattock](images/recipes/diamond_mattock.png)
 

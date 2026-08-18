@@ -2,13 +2,14 @@
 
 **Edition:** Java  
 **Version:** 26.2 Paper  
-**Last verified:** 2026-08-15
+**Last verified:** 2026-08-17
 **Applies to:** snaxcraft server content
 
 ## How to use this cookbook
 
 - **Shapeless** recipes can go anywhere in the crafting grid.
 - Recipe images show the crafting grid or cooking input. Shapeless recipes fill the top row left to right; a space is an empty slot.
+- Each recipe lists **Ingredients** in player item names. The image shows where they go.
 - Cooking entries list every supported station. A furnace recipe does not automatically work in a smoker.
 - Food values are shown as **nutrition / saturation**. Two nutrition points fill one hunger icon.
 - Most foods also apply a short, hidden regeneration pulse. The Effects line lists the additional visible or lasting effects instead of repeating that pulse on every entry.
@@ -124,6 +125,8 @@ Building, storage, and material-conversion recipes are in [Crafting and material
 **Makes:** 1 Flour  
 **Method:** Shapeless crafting  
 
+**Ingredients:** 3 Wheat
+
 ![3 Wheat make Flour](images/recipes/flour.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/flour.json`
@@ -133,6 +136,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/flour.json`
 **Makes:** 1 Bag of Flour  
 **Method:** Shaped crafting
 
+**Ingredients:** 9 Flour
+
 ![9 Flour make Bag of Flour](images/recipes/flour_bag.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/flour_bag.json`
@@ -141,9 +146,13 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/flour_bag.json`
 
 **Egg recipe:**
 
+**Ingredients:** 1 Egg of any color and 2 Flour
+
 ![1 Egg and 2 Flour make 4 Dough](images/recipes/dough.png)
 
 **Water recipe:**
+
+**Ingredients:** 1 Water Bottle and 1 Flour
 
 ![1 Water Bottle and 1 Flour make Dough](images/recipes/dough_from_water.png)
 
@@ -159,6 +168,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/dough_from_water.j
 **Food:** 5 nutrition (2.5 hunger icons) / 6 saturation  
 **Effects:** Cleanses poison, mining fatigue, wither, weakness, bad omen, blindness, darkness, infested, weaving, nausea, oozing, and slowness.
 
+**Ingredients:** 1 Dough
+
 ![1 Dough cooks into Bread](images/recipes/bread.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/bread.json`
@@ -170,6 +181,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/bread_campfire.jso
 **Method:** Shapeless crafting  
 **Food:** 2 nutrition (1 hunger icon) / 1.2 saturation
 
+**Ingredients:** 1 Milk Bottle, 1 Sugar, and 1 Brown Mushroom
+
 ![1 Milk Bottle, 1 Sugar, and 1 Brown Mushroom make 4 Cheese](images/recipes/cheese.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cheese.json`
@@ -180,6 +193,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cheese.json`
 **Stations:** Furnace - 5 seconds; campfire - 10 seconds  
 **Food:** 1 nutrition (0.5 hunger icon) / 0.6 saturation  
 **Effects:** Haste I for 30 seconds.
+
+**Ingredients:** 1 Cocoa Beans
 
 ![1 Cocoa Beans cooks into Chocolate](images/recipes/chocolate.png)
 
@@ -193,6 +208,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/chocolate_campfire
 **Food:** 2 nutrition (1 hunger icon) / 1.2 saturation  
 **Effects:** Clears all status effects when drunk.
 
+**Ingredients:** 1 Milk Bucket and 4 Glass Bottle
+
 ![1 Milk Bucket and 4 Glass Bottle make 4 Milk Bottle](images/recipes/milk_bottle.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/milk_bottle.json`
@@ -201,6 +218,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/milk_bottle.json`
 
 **Makes:** 2 Sugar  
 **Method:** Shapeless crafting  
+
+**Ingredients:** 1 Honey Bottle
 
 ![1 Honey Bottle make 2 Sugar](images/recipes/sugar_from_honey_bottle.png)
 
@@ -215,6 +234,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/sugar_from_honey_b
 **Food:** 2 nutrition (1 hunger icon) / 1.2 saturation  
 **Effects:** Regeneration I for 10 seconds.
 
+**Ingredients:** 1 Apple
+
 ![1 Apple cooks into Baked Apple](images/recipes/baked_apple.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/baked_apple.json`
@@ -226,6 +247,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/baked_apple_campfi
 **Stations:** Furnace - 5 seconds; campfire - 10 seconds  
 **Food:** 4 nutrition (2 hunger icons) / 2.4 saturation  
 **Effects:** Absorption I for 2 minutes and Regeneration I for 1 minute.
+
+**Ingredients:** 1 Golden Apple
 
 ![1 Golden Apple cooks into Baked Golden Apple](images/recipes/baked_golden_apple.png)
 
@@ -239,6 +262,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/baked_golden_apple
 **Food:** 3 nutrition (1.5 hunger icons) / 1.8 saturation  
 **Effects:** No additional lasting effect.
 
+**Ingredients:** 1 Potato
+
 ![1 Potato cooks into Baked Potato](images/recipes/baked_potato.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/baked_potato.json`
@@ -250,6 +275,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/baked_potato_campf
 **Stations:** Furnace - 5 seconds; campfire - 10 seconds  
 **Food:** 1 nutrition (0.5 hunger icon) / 0.6 saturation  
 **Effects:** Resistance I for 10 seconds.
+
+**Ingredients:** 1 Pumpkin
 
 ![1 Pumpkin cooks into Baked Pumpkin](images/recipes/baked_pumpkin.png)
 
@@ -263,6 +290,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/baked_pumpkin_camp
 **Food:** 1 nutrition (0.5 hunger icon) / 0.6 saturation  
 **Effects:** No additional lasting effect.
 
+**Ingredients:** 1 Brown Mushroom
+
 ![1 Brown Mushroom cooks into Braised Brown Mushroom](images/recipes/braised_brown_mushroom.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/braised_brown_mushroom.json`
@@ -274,6 +303,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/braised_brown_mush
 **Stations:** Furnace - 5 seconds; campfire - 10 seconds  
 **Food:** 1 nutrition (0.5 hunger icon) / 0.6 saturation  
 **Effects:** Weakness I for 30 seconds.
+
+**Ingredients:** 1 Crimson Fungus
 
 ![1 Crimson Fungus cooks into Braised Crimson Fungus](images/recipes/braised_crimson_fungus.png)
 
@@ -287,6 +318,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/braised_crimson_fu
 **Food:** 1 nutrition (0.5 hunger icon) / 0.6 saturation  
 **Effects:** Poison I for 30 seconds.
 
+**Ingredients:** 1 Red Mushroom
+
 ![1 Red Mushroom cooks into Braised Toadstool](images/recipes/braised_red_mushroom.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/braised_red_mushroom.json`
@@ -299,6 +332,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/braised_red_mushro
 **Food:** 1 nutrition (0.5 hunger icon) / 0.6 saturation  
 **Effects:** Invisibility I for 30 seconds.
 
+**Ingredients:** 1 Warped Fungus
+
 ![1 Warped Fungus cooks into Braised Warped Fungus](images/recipes/brasied_warped_fungus.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/brasied_warped_fungus.json`
@@ -308,9 +343,10 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/brasied_warped_fun
 
 **Makes:** 1 Charred Fish  
 **Method:** Smoker - 5 seconds  
-**Ingredient:** 1 raw Tropical Fish, Pufferfish, Cod, or Salmon  
 **Food:** 1 nutrition (0.5 hunger icon) / 0.6 saturation  
 **Effects:** No additional lasting effect.
+
+**Ingredients:** 1 Tropical Fish, Pufferfish, Cod, or Salmon
 
 ![1 Tropical Fish cooks into Charred Fish](images/recipes/charred_fish.png)
 
@@ -320,9 +356,10 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/charred_fish.json`
 
 **Makes:** 1 Charred Meat  
 **Method:** Smoker - 5 seconds  
-**Ingredient:** 1 raw Rabbit, Chicken, Beef, Porkchop, or Mutton  
 **Food:** 1 nutrition (0.5 hunger icon) / 0.6 saturation  
 **Effects:** No additional lasting effect.
+
+**Ingredients:** 1 Rabbit, Chicken, Beef, Porkchop, or Mutton
 
 ![1 Rabbit cooks into Charred Meat](images/recipes/charred_meat.png)
 
@@ -335,6 +372,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/charred_meat.json`
 **Food:** 1 nutrition (0.5 hunger icon) / 0.6 saturation  
 **Effects:** No additional lasting effect.
 
+**Ingredients:** 1 Potato
+
 ![1 Potato cooks into Charred Potato](images/recipes/charred_potato.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/charred_potato.json`
@@ -345,6 +384,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/charred_potato.jso
 **Stations:** Furnace - 5 seconds; campfire - 10 seconds  
 **Food:** 8 nutrition (4 hunger icons) / 12.8 saturation  
 **Effects:** No additional lasting effect.
+
+**Ingredients:** 1 Beef
 
 ![1 Beef cooks into Cooked Beef](images/recipes/cooked_beef.png)
 
@@ -358,6 +399,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_beef_campfi
 **Food:** 2 nutrition (1 hunger icon) / 1.2 saturation  
 **Effects:** No additional lasting effect.
 
+**Ingredients:** 1 Chicken
+
 ![1 Chicken cooks into Cooked Chicken](images/recipes/cooked_chicken.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_chicken.json`
@@ -369,6 +412,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_chicken_cam
 **Stations:** Furnace - 5 seconds; campfire - 10 seconds  
 **Food:** 2 nutrition (1 hunger icon) / 1.2 saturation  
 **Effects:** No additional lasting effect.
+
+**Ingredients:** 1 Cod
 
 ![1 Cod cooks into Cooked Cod](images/recipes/cooked_cod.png)
 
@@ -382,6 +427,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_cod_campfir
 **Food:** 2 nutrition (1 hunger icon) / 1.2 saturation  
 **Effects:** No additional lasting effect.
 
+**Ingredients:** 1 Mutton
+
 ![1 Mutton cooks into Cooked Mutton](images/recipes/cooked_mutton.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_mutton.json`
@@ -393,6 +440,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_mutton_camp
 **Stations:** Furnace - 5 seconds; campfire - 10 seconds  
 **Food:** 2 nutrition (1 hunger icon) / 1.2 saturation  
 **Effects:** No additional lasting effect.
+
+**Ingredients:** 1 Porkchop
 
 ![1 Porkchop cooks into Cooked Porkchop](images/recipes/cooked_pork.png)
 
@@ -406,6 +455,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_pork_campfi
 **Food:** 2 nutrition (1 hunger icon) / 1.2 saturation  
 **Effects:** Conduit Power I for 30 seconds.
 
+**Ingredients:** 1 Pufferfish
+
 ![1 Pufferfish cooks into Cooked Pufferfish](images/recipes/cooked_pufferfish.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_pufferfish.json`
@@ -418,6 +469,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_pufferfish_
 **Food:** 2 nutrition (1 hunger icon) / 1.2 saturation  
 **Effects:** No additional lasting effect.
 
+**Ingredients:** 1 Rabbit
+
 ![1 Rabbit cooks into Cooked Rabbit](images/recipes/cooked_rabbit.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_rabbit.json`
@@ -429,6 +482,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_rabbit_camp
 **Stations:** Furnace - 5 seconds; campfire - 10 seconds  
 **Food:** 3 nutrition (1.5 hunger icons) / 1.8 saturation  
 **Effects:** No additional lasting effect.
+
+**Ingredients:** 1 Salmon
 
 ![1 Salmon cooks into Cooked Salmon](images/recipes/cooked_salmon.png)
 
@@ -443,6 +498,8 @@ Cooking 1 Tropical Fish makes 1 Cooked Cod.
 **Food:** 2 nutrition (1 hunger icon) / 1.2 saturation  
 **Effects:** No additional lasting effect.
 
+**Ingredients:** 1 Tropical Fish
+
 ![1 Tropical Fish cooks into Cooked Cod](images/recipes/cooked_tropical_fish.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_tropical_fish.json`
@@ -455,10 +512,15 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_tropical_fi
 **Food:** 1 nutrition (0.5 hunger icon) / 0.6 saturation  
 **Effects:** Water Breathing I for 10 seconds.
 
+**Ingredients:** 1 Kelp
+
 ![1 Kelp cooks into Dried Kelp](images/recipes/dried_kelp.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/dried_kelp.json`
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/dried_kelp_campfire.json`
+
+**Ingredients:** 1 Dried Kelp Block
+
 ![1 Dried Kelp Block make 9 Dried Kelp](images/recipes/dried_kelp_from_dried_kelp_block.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/dried_kelp_from_dried_kelp_block.json`
@@ -469,6 +531,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/dried_kelp_from_dr
 **Stations:** Furnace - 5 seconds; campfire - 10 seconds  
 **Food:** 1 nutrition (0.5 hunger icon) / 0.6 saturation  
 **Effects:** No additional lasting effect.
+
+**Ingredients:** 1 Egg of any color
 
 ![1 Egg cooks into Fried Egg](images/recipes/fried_egg.png)
 
@@ -481,6 +545,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/fried_egg_campfire
 **Stations:** Furnace - 5 seconds; campfire - 10 seconds  
 **Food:** 1 nutrition (0.5 hunger icon) / 0.6 saturation  
 **Effects:** No additional lasting effect.
+
+**Ingredients:** 1 Glow Berries
 
 ![1 Glow Berries cooks into Glow Mash](images/recipes/glow_mash.png)
 
@@ -495,6 +561,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/glow_mash_campfire
 **Food:** 2 nutrition (1 hunger icon) / 1.2 saturation  
 **Effects:** Regeneration I for 30 seconds and Absorption I for 2 minutes.
 
+**Ingredients:** 8 Gold Nugget and 1 Apple
+
 ![8 Gold Nugget and 1 Apple make Golden Apple](images/recipes/golden_apple.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/golden_apple.json`
@@ -507,6 +575,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/golden_apple.json`
 **Food:** 1 nutrition (0.5 hunger icon) / 0.6 saturation  
 **Effects:** Night Vision I for 30 seconds.
 
+**Ingredients:** 8 Gold Nugget and 1 Carrot
+
 ![8 Gold Nugget and 1 Carrot make Golden Carrot](images/recipes/golden_carrot.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/golden_carrot.json`
@@ -517,6 +587,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/golden_carrot.json
 **Stations:** Furnace - 5 seconds; campfire - 10 seconds  
 **Food:** 1 nutrition (0.5 hunger icon) / 0.6 saturation  
 **Effects:** Fire Resistance I for 10 seconds.
+
+**Ingredients:** 1 Melon Slice
 
 ![1 Melon Slice cooks into Grilled Melon](images/recipes/grilled_melon.png)
 
@@ -530,6 +602,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/grilled_melon_camp
 **Food:** 2 nutrition (1 hunger icon) / 1.2 saturation  
 **Effects:** Strength I for 10 seconds.
 
+**Ingredients:** 1 Beetroot
+
 ![1 Beetroot cooks into Grilled Tomatoes](images/recipes/grilled_tomatoes.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/grilled_tomatoes.json`
@@ -541,6 +615,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/grilled_tomatoes_c
 **Stations:** Furnace or campfire - 5 seconds  
 **Food:** 1 nutrition (0.5 hunger icon) / 0.6 saturation  
 **Effects:** Levitation III for 3 seconds.
+
+**Ingredients:** 1 Chorus Fruit
 
 ![1 Chorus Fruit cooks into Popped Chorus Fruit](images/recipes/popped_chorus_fruit.png)
 
@@ -554,6 +630,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/popped_chorus_frui
 **Food:** 1 nutrition (0.5 hunger icon) / 0.6 saturation  
 **Effects:** Night Vision I for 1 minute.
 
+**Ingredients:** 1 Golden Carrot
+
 ![1 Golden Carrot cooks into Steamed Golden Carrots](images/recipes/golden_steamed_carrots.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/golden_steamed_carrots.json`
@@ -566,6 +644,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/golden_steamed_car
 **Food:** 1 nutrition (0.5 hunger icon) / 0.6 saturation  
 **Effects:** Night Vision I for 10 seconds.
 
+**Ingredients:** 1 Carrot
+
 ![1 Carrot cooks into Steamed Carrots](images/recipes/steamed_carrots.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/steamed_carrots.json`
@@ -577,6 +657,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/steamed_carrots_ca
 **Stations:** Furnace - 5 seconds; campfire - 10 seconds  
 **Food:** 1 nutrition (0.5 hunger icon) / 0.6 saturation  
 **Effects:** Health Boost I for 10 seconds.
+
+**Ingredients:** 1 Sweet Berries
 
 ![1 Sweet Berries cooks into Sweet Berry Mash](images/recipes/sweet_berry_mash.png)
 
@@ -592,6 +674,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/sweet_berry_mash_c
 **Food:** 3 nutrition (1.5 hunger icons) / 1.8 saturation  
 **Effects:** Regeneration I for 1 minute. Returns the bottle after use.
 
+**Ingredients:** 1 Baked Apple, 1 Sugar, and 1 Glass Bottle
+
 ![1 Baked Apple, 1 Sugar, and 1 Glass Bottle make Canned Apples](images/recipes/canned_apples.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/canned_apples.json`
@@ -602,6 +686,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/canned_apples.json
 **Method:** Shapeless crafting  
 **Food:** 4 nutrition (2 hunger icons) / 2.4 saturation  
 **Effects:** Regeneration II for 20 seconds and Absorption II for 2 minutes. Returns the bottle after use.
+
+**Ingredients:** 1 Golden Apple, 1 Sugar, and 1 Glass Bottle
 
 ![1 Golden Apple, 1 Sugar, and 1 Glass Bottle make Canned Golden Apples](images/recipes/canned_golden_apples.png)
 
@@ -614,6 +700,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/canned_golden_appl
 **Food:** 2 nutrition (1 hunger icon) / 1.2 saturation  
 **Effects:** No additional lasting effect. Returns the bottle after use.
 
+**Ingredients:** 1 Glow Mash, 1 Sugar, and 1 Glass Bottle
+
 ![1 Glow Mash, 1 Sugar, and 1 Glass Bottle make Glow Berry Jam](images/recipes/glow_jam.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/glow_jam.json`
@@ -624,6 +712,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/glow_jam.json`
 **Method:** Shapeless crafting  
 **Food:** 2 nutrition (1 hunger icon) / 1.2 saturation  
 **Effects:** Night Vision I for 10 minutes. Returns the bottle after use.
+
+**Ingredients:** 1 Golden Carrot, 1 Brown Mushroom, and 1 Glass Bottle
 
 ![1 Golden Carrot, 1 Brown Mushroom, and 1 Glass Bottle make Golden Pickled Carrots](images/recipes/golden_pickled_carrots.png)
 
@@ -636,6 +726,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/golden_pickled_car
 **Food:** 2 nutrition (1 hunger icon) / 1.2 saturation  
 **Effects:** Fire Resistance I for 10 minutes. Returns the bottle after use.
 
+**Ingredients:** 1 Melon Slice, 1 Snowball, 1 Glass Bottle, and 1 Sugar
+
 ![1 Melon Slice, 1 Snowball, 1 Glass Bottle, and 1 Sugar make Melon Sorbet](images/recipes/melon_sorbet.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/melon_sorbet.json`
@@ -647,6 +739,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/melon_sorbet.json`
 **Food:** 2 nutrition (1 hunger icon) / 1.2 saturation  
 **Effects:** Night Vision I for 5 minutes. Returns the bottle after use.
 
+**Ingredients:** 1 Carrot, 1 Brown Mushroom, and 1 Glass Bottle
+
 ![1 Carrot, 1 Brown Mushroom, and 1 Glass Bottle make Pickled Carrots](images/recipes/pickled_carrots.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/pickled_carrots.json`
@@ -656,6 +750,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/pickled_carrots.js
 **Makes:** 1 throwable Pickled Crimson Fungus  
 **Method:** Shapeless crafting  
 **Effect:** Applies Weakness II for 1 minute when the splash hits.
+
+**Ingredients:** 1 Crimson Fungus, 1 Brown Mushroom, and 1 Glass Bottle
 
 ![1 Crimson Fungus, 1 Brown Mushroom, and 1 Glass Bottle make Pickled Crimson Fungus](images/recipes/pickled_crimson_fungus.png)
 
@@ -668,6 +764,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/pickled_crimson_fu
 **Food:** 3 nutrition (1.5 hunger icons) / 1.8 saturation  
 **Effects:** No additional lasting effect. Returns the bottle after use.
 
+**Ingredients:** 1 Braised Brown Mushroom, 1 Brown Mushroom, and 1 Glass Bottle
+
 ![1 Braised Brown Mushroom, 1 Brown Mushroom, and 1 Glass Bottle make Pickled Mushrooms](images/recipes/pickled_mushrooms.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/pickled_mushrooms.json`
@@ -679,6 +777,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/pickled_mushrooms.
 **Food:** 5 nutrition (2.5 hunger icons) / 3 saturation  
 **Effects:** No additional lasting effect. Returns the bottle after use.
 
+**Ingredients:** 1 Baked Potato, 1 Brown Mushroom, and 1 Glass Bottle
+
 ![1 Baked Potato, 1 Brown Mushroom, and 1 Glass Bottle make Pickled Potatoes](images/recipes/pickled_potatoes.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/pickled_potatoes.json`
@@ -688,6 +788,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/pickled_potatoes.j
 **Makes:** 1 throwable Pickled Red Mushrooms  
 **Method:** Shapeless crafting  
 **Effect:** Applies Poison II for 1 minute when the splash hits.
+
+**Ingredients:** 1 Red Mushroom, 1 Brown Mushroom, and 1 Glass Bottle
 
 ![1 Red Mushroom, 1 Brown Mushroom, and 1 Glass Bottle make Pickled Red Mushrooms](images/recipes/pickled_red_mushrooms.png)
 
@@ -702,6 +804,8 @@ The in-game item uses the spelling **Tomatotes**.
 **Food:** 3 nutrition (1.5 hunger icons) / 1.8 saturation  
 **Effects:** Strength I for 5 minutes. Returns the bottle after use.
 
+**Ingredients:** 1 Beetroot, 1 Brown Mushroom, and 1 Glass Bottle
+
 ![1 Beetroot, 1 Brown Mushroom, and 1 Glass Bottle make Sundried Tomatotes](images/recipes/pickled_tomatoes.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/pickled_tomatoes.json`
@@ -712,6 +816,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/pickled_tomatoes.j
 **Method:** Shapeless crafting  
 **Food:** 2 nutrition (1 hunger icon) / 1.2 saturation  
 **Effects:** Invisibility I for 5 minutes. Returns the bottle after use.
+
+**Ingredients:** 1 Warped Fungus, 1 Brown Mushroom, and 1 Glass Bottle
 
 ![1 Warped Fungus, 1 Brown Mushroom, and 1 Glass Bottle make Pickled Warped Fungus](images/recipes/pickled_warped_fungus.png)
 
@@ -724,6 +830,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/pickled_warped_fun
 **Food:** 2 nutrition (1 hunger icon) / 1.2 saturation  
 **Effects:** Resistance I for 3 minutes. Returns the bottle after use.
 
+**Ingredients:** 1 Baked Pumpkin, 1 Sugar, and 1 Glass Bottle
+
 ![1 Baked Pumpkin, 1 Sugar, and 1 Glass Bottle make Pumpkin Jam](images/recipes/pumpkin_jam.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/pumpkin_jam.json`
@@ -735,6 +843,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/pumpkin_jam.json`
 **Food:** 2 nutrition (1 hunger icon) / 1.2 saturation  
 **Effects:** Fire Resistance I for 5 minutes. Returns the bottle after use.
 
+**Ingredients:** 1 Melon Slice, 1 Sugar, and 1 Glass Bottle
+
 ![1 Melon Slice, 1 Sugar, and 1 Glass Bottle make Rind Jam](images/recipes/rind_jam.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/rind_jam.json`
@@ -745,6 +855,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/rind_jam.json`
 **Method:** Shapeless crafting  
 **Food:** 2 nutrition (1 hunger icon) / 1.2 saturation  
 **Effects:** Health Boost I for 3 minutes. Returns the bottle after use.
+
+**Ingredients:** 1 Sweet Berry Mash, 1 Sugar, and 1 Glass Bottle
 
 ![1 Sweet Berry Mash, 1 Sugar, and 1 Glass Bottle make Sweet Berry Jam](images/recipes/sweet_berry_jam.png)
 
@@ -759,6 +871,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/sweet_berry_jam.js
 **Food:** 4 nutrition (2 hunger icons) / 2.4 saturation  
 **Effects:** Regeneration I for 3 minutes.
 
+**Ingredients:** 1 Baked Apple, 2 Sugar, and 1 Dough
+
 ![1 Baked Apple, 2 Sugar, and 1 Dough make Apple Empanada](images/recipes/apple_empanada.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/apple_empanada.json`
@@ -770,6 +884,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/apple_empanada.jso
 **Food:** 3 nutrition (1.5 hunger icons) / 1.8 saturation  
 **Effects:** Haste II for 2 minutes 30 seconds.
 
+**Ingredients:** 2 Chocolate, 1 Dough, and 1 Sugar
+
 ![2 Chocolate, 1 Dough, and 1 Sugar make Brownie](images/recipes/brownie.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/brownie.json`
@@ -778,6 +894,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/brownie.json`
 
 **Makes:** 1 Cake  
 **Method:** Shaped crafting
+
+**Ingredients:** 2 Sweet Berries, 1 Milk Bottle, 2 Sugar, 1 Egg, and 3 Flour
 
 ![2 Sweet Berries, 1 Milk Bottle, 2 Sugar, 1 Egg, and 3 Flour make Cake](images/recipes/cake.png)
 
@@ -791,6 +909,8 @@ Source: https://minecraft.wiki/w/Cake
 **Food:** 4 nutrition (2 hunger icons) / 2.4 saturation  
 **Effects:** Night Vision I for 10 minutes.
 
+**Ingredients:** 1 Carrot, 2 Sugar, 1 Cocoa Beans, and 1 Dough
+
 ![1 Carrot, 2 Sugar, 1 Cocoa Beans, and 1 Dough make Carrot Cupcake](images/recipes/carrot_cupcake.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/carrot_cupcake.json`
@@ -801,6 +921,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/carrot_cupcake.jso
 **Method:** Shapeless crafting  
 **Food:** 2 nutrition (1 hunger icon) / 1.2 saturation  
 **Effects:** Haste I for 5 minutes.
+
+**Ingredients:** 1 Chocolate, 1 Sugar, and 1 Dough
 
 ![1 Chocolate, 1 Sugar, and 1 Dough make Chocolate Chip Cookie](images/recipes/chocolate_chip_cookie.png)
 
@@ -813,6 +935,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/chocolate_chip_coo
 **Food:** 2 nutrition (1 hunger icon) / 1.2 saturation each  
 **Effects:** Levitation XXX for 1 second.
 
+**Ingredients:** 1 Popped Chorus Fruit, 1 Snowball, 1 Milk Bottle, 1 Dough, and 1 Sugar
+
 ![1 Popped Chorus Fruit, 1 Snowball, 1 Milk Bottle, 1 Dough, and 1 Sugar make 4 Chorus Mochi](images/recipes/chorus_mochi.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/chorus_mochi.json`
@@ -823,6 +947,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/chorus_mochi.json`
 **Method:** Shapeless crafting  
 **Food:** 5 nutrition (2.5 hunger icons) / 3 saturation  
 **Effects:** No additional lasting effect.
+
+**Ingredients:** 1 Egg, 2 Sugar, and 1 Bread
 
 ![1 Egg, 2 Sugar, and 1 Bread make French Toast](images/recipes/french_toast.png)
 
@@ -837,6 +963,8 @@ The in-game item uses the spelling **Empananda**.
 **Food:** 4 nutrition (2 hunger icons) / 2.4 saturation  
 **Effects:** Regeneration II for 45 seconds and Absorption II for 4 minutes.
 
+**Ingredients:** 1 Golden Apple, 2 Sugar, and 1 Dough
+
 ![1 Golden Apple, 2 Sugar, and 1 Dough make Gilded Empananda](images/recipes/golden_apple_empanada.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/golden_apple_empanada.json`
@@ -847,6 +975,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/golden_apple_empan
 **Method:** Shapeless crafting  
 **Food:** 4 nutrition (2 hunger icons) / 2.4 saturation  
 **Effects:** No additional lasting effect.
+
+**Ingredients:** 1 Glow Mash, 1 Sugar, 1 Dough, and 1 Milk Bottle
 
 ![1 Glow Mash, 1 Sugar, 1 Dough, and 1 Milk Bottle make Glow Berry Crumble](images/recipes/glow_berry_crumble.png)
 
@@ -859,6 +989,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/glow_berry_crumble
 **Food:** 4 nutrition (2 hunger icons) / 2.4 saturation  
 **Effects:** Night Vision I for 20 minutes.
 
+**Ingredients:** 1 Golden Carrot, 2 Sugar, 1 Cocoa Beans, and 1 Dough
+
 ![1 Golden Carrot, 2 Sugar, 1 Cocoa Beans, and 1 Dough make Golden Carrot Cupcake](images/recipes/golden_carrot_cupcake.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/golden_carrot_cupcake.json`
@@ -869,6 +1001,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/golden_carrot_cupc
 **Method:** Shapeless crafting  
 **Food:** 5 nutrition (2.5 hunger icons) / 3 saturation  
 **Effects:** Speed II for 3 minutes.
+
+**Ingredients:** 1 Honey Bottle, 1 Egg, 2 Sugar, and 1 Bread
 
 ![1 Honey Bottle, 1 Egg, 2 Sugar, and 1 Bread make Honied French Toast](images/recipes/honied_french_toast.png)
 
@@ -881,6 +1015,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/honied_french_toas
 **Food:** 1 nutrition (0.5 hunger icon) / 0.6 saturation  
 **Effects:** No additional lasting effect.
 
+**Ingredients:** 1 Dough
+
 ![1 Dough cooks into Naan](images/recipes/naan.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/naan.json`
@@ -891,6 +1027,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/naan.json`
 **Method:** Shapeless crafting  
 **Food:** 1 nutrition (0.5 hunger icon) / 0.6 saturation each  
 **Effects:** Regeneration I for 30 seconds.
+
+**Ingredients:** 1 Sugar Cane, 2 Sugar, and 1 Dough
 
 ![1 Sugar Cane, 2 Sugar, and 1 Dough make 2 Puerquito](images/recipes/puerquito.png)
 
@@ -903,6 +1041,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/puerquito.json`
 **Food:** 4 nutrition (2 hunger icons) / 2.4 saturation  
 **Effects:** Resistance I for 8 minutes.
 
+**Ingredients:** 1 Baked Pumpkin, 2 Sugar, and 1 Dough
+
 ![1 Baked Pumpkin, 2 Sugar, and 1 Dough make Pumpkin Empanada](images/recipes/pumpkin_empanada.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/pumpkin_empanada.json`
@@ -913,6 +1053,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/pumpkin_empanada.j
 **Method:** Shapeless crafting  
 **Food:** 2 nutrition (1 hunger icon) / 1.2 saturation each  
 **Effects:** No additional lasting effect.
+
+**Ingredients:** 1 Dough, 1 Cheese, and 1 Cooked Porkchop
 
 ![1 Dough, 1 Cheese, and 1 Cooked Porkchop make 4 Pupusa](images/recipes/pupusa.png)
 
@@ -925,6 +1067,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/pupusa.json`
 **Food:** 4 nutrition (2 hunger icons) / 2.4 saturation  
 **Effects:** Health Boost II for 8 minutes.
 
+**Ingredients:** 1 Sweet Berry Mash, 1 Sugar, 1 Dough, and 1 Cheese
+
 ![1 Sweet Berry Mash, 1 Sugar, 1 Dough, and 1 Cheese make Sweet Berry Danish](images/recipes/sweet_berry_danish.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/sweet_berry_danish.json`
@@ -935,6 +1079,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/sweet_berry_danish
 **Method:** Shapeless crafting  
 **Food:** 5 nutrition (2.5 hunger icons) / 3 saturation  
 **Effects:** Health Boost II for 8 minutes.
+
+**Ingredients:** 1 Sweet Berries, 1 Egg, 2 Sugar, and 1 Bread
 
 ![1 Sweet Berries, 1 Egg, 2 Sugar, and 1 Bread make Sweet Berry Toast](images/recipes/sweet_berry_toast.png)
 
@@ -949,6 +1095,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/sweet_berry_toast.
 **Food:** 6 nutrition (3 hunger icons) / 3.6 saturation  
 **Effects:** Conduit Power I for 8 minutes. Returns the bowl after use.
 
+**Ingredients:** 1 Dried Kelp, 1 Carrot, 1 Cooked Cod, 1 Braised Brown Mushroom, 1 Pufferfish, and 1 Bowl
+
 ![1 Dried Kelp, 1 Carrot, 1 Cooked Cod, 1 Braised Brown Mushroom, 1 Pufferfish, and 1 Bowl make Bokguk](images/recipes/bokguk.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/bokguk.json`
@@ -959,6 +1107,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/bokguk.json`
 **Method:** Shapeless crafting  
 **Food:** 4 nutrition (2 hunger icons) / 2.4 saturation  
 **Effects:** Strength II for 2 minutes 30 seconds.
+
+**Ingredients:** 1 Beetroot, 1 Cheese, and 1 Bread
 
 ![1 Beetroot, 1 Cheese, and 1 Bread make Bruschetta](images/recipes/bruschetta.png)
 
@@ -972,6 +1122,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/bruschetta.json`
 **Food:** 5 nutrition (2.5 hunger icons) / 3 saturation each  
 **Effects:** Strength I for 3 minutes.
 
+**Ingredients:** 3 Cheese, 3 Beetroot, and 3 Dough
+
 ![3 Cheese, 3 Beetroot, and 3 Dough make 4 Cheese Pizza](images/recipes/cheese_pizza.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cheese_pizza.json`
@@ -982,6 +1134,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cheese_pizza.json`
 **Method:** Shapeless crafting  
 **Food:** 6 nutrition (3 hunger icons) / 3.6 saturation  
 **Effects:** Weakness I for 5 minutes. Returns the bowl after use.
+
+**Ingredients:** 1 Crimson Fungus, 1 Cooked Beef, 1 Milk Bottle, 1 Bowl, and 1 Dough
 
 ![1 Crimson Fungus, 1 Cooked Beef, 1 Milk Bottle, 1 Bowl, and 1 Dough make Crimson Stroganoff](images/recipes/crimson_stroganoff.png)
 
@@ -994,6 +1148,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/crimson_stroganoff
 **Food:** 3 nutrition (1.5 hunger icons) / 1.8 saturation  
 **Effects:** Water Breathing I for 8 minutes.
 
+**Ingredients:** 1 Dried Kelp, 1 Carrot, 1 Egg, 1 Dough, and 1 Sugar
+
 ![1 Dried Kelp, 1 Carrot, 1 Egg, 1 Dough, and 1 Sugar make Gimmari](images/recipes/gimmari.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/gimmari.json`
@@ -1004,6 +1160,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/gimmari.json`
 **Method:** Shapeless crafting  
 **Food:** 8 nutrition (4 hunger icons) / 4.8 saturation  
 **Effects:** No additional lasting effect. Returns the bowl after use.
+
+**Ingredients:** 1 Baked Potato, 1 Cheese, 1 Flour, 1 Bowl, and 1 Egg
 
 ![1 Baked Potato, 1 Cheese, 1 Flour, 1 Bowl, and 1 Egg make Gnocchi](images/recipes/gnocchi.png)
 
@@ -1016,6 +1174,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/gnocchi.json`
 
 Cook this stock to finish Green Curry.
 
+**Ingredients:** 1 Green Dye, 2 Sugar, 1 Milk Bottle, 1 Cod, and 1 Bowl
+
 ![1 Green Dye, 2 Sugar, 1 Milk Bottle, 1 Cod, and 1 Bowl make Green Curry Stock](images/recipes/uncooked_green_curry.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/uncooked_green_curry.json`
@@ -1026,6 +1186,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/uncooked_green_cur
 **Method:** Furnace - 15 seconds  
 **Food:** 10 nutrition (5 hunger icons) / 6 saturation  
 **Effects:** Speed II for 30 minutes. Returns the bowl after use.
+
+**Ingredients:** 1 Green Curry Stock
 
 ![1 Green Curry Stock cooks into Green Curry](images/recipes/green_curry.png)
 
@@ -1038,6 +1200,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/green_curry.json`
 
 Cook this stock to finish Japanese Curry.
 
+**Ingredients:** 2 Sugar, 1 Potato, 1 Beef, 1 Flour, 1 Bowl, and 1 Carrot
+
 ![2 Sugar, 1 Potato, 1 Beef, 1 Flour, 1 Bowl, and 1 Carrot make Curry Stock](images/recipes/uncooked_curry.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/uncooked_curry.json`
@@ -1048,6 +1212,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/uncooked_curry.jso
 **Method:** Furnace - 15 seconds  
 **Food:** 10 nutrition (5 hunger icons) / 6 saturation  
 **Effects:** Strength I for 30 minutes. Returns the bowl after use.
+
+**Ingredients:** 1 Curry Stock
 
 ![1 Curry Stock cooks into Japanese Curry](images/recipes/japanese_curry.png)
 
@@ -1060,6 +1226,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/japanese_curry.jso
 **Food:** 6 nutrition (3 hunger icons) / 3.6 saturation  
 **Effects:** Strength I for 5 minutes and Regeneration I for 1 minute. Returns the bowl after use.
 
+**Ingredients:** 1 Beetroot, 1 Dandelion, 1 Cooked Cod, 1 Egg, 1 Fern, and 1 Bowl
+
 ![1 Beetroot, 1 Dandelion, 1 Cooked Cod, 1 Egg, 1 Fern, and 1 Bowl make Kontomire-Dandelion Stew](images/recipes/kontomire_stew.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/kontomire_stew.json`
@@ -1070,6 +1238,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/kontomire_stew.jso
 **Method:** Shapeless crafting  
 **Food:** 8 nutrition (4 hunger icons) / 4.8 saturation  
 **Effects:** No additional lasting effect.
+
+**Ingredients:** 1 Baked Potato, 1 Egg, 1 Milk Bottle, and 1 Bread
 
 ![1 Baked Potato, 1 Egg, 1 Milk Bottle, and 1 Bread make Latke](images/recipes/latke.png)
 
@@ -1083,6 +1253,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/latke.json`
 **Food:** 5 nutrition (2.5 hunger icons) / 3 saturation each  
 **Effects:** Strength I for 3 minutes.
 
+**Ingredients:** 2 Cheese, 1 Cooked Rabbit, 3 Beetroot, and 3 Dough
+
 ![2 Cheese, 1 Cooked Rabbit, 3 Beetroot, and 3 Dough make 4 Meat Pizza](images/recipes/meat_pizza.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/meat_pizza.json`
@@ -1095,6 +1267,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/meat_pizza.json`
 **Food:** 4 nutrition (2 hunger icons) / 2.4 saturation each  
 **Effects:** Strength I for 3 minutes.
 
+**Ingredients:** 2 Braised Brown Mushroom, 1 Cheese, 3 Beetroot, and 3 Dough
+
 ![2 Braised Brown Mushroom, 1 Cheese, 3 Beetroot, and 3 Dough make 4 Mushroom Pizza](images/recipes/mushroom_pizza.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/mushroom_pizza.json`
@@ -1105,6 +1279,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/mushroom_pizza.jso
 **Method:** Shapeless crafting  
 **Food:** 5 nutrition (2.5 hunger icons) / 3 saturation  
 **Effects:** Night Vision I for 5 minutes. Returns the bowl after use.
+
+**Ingredients:** 1 Dough, 1 Cooked Cod, 1 Carrot, 1 Egg, 1 Sugar, and 1 Bowl
 
 ![1 Dough, 1 Cooked Cod, 1 Carrot, 1 Egg, 1 Sugar, and 1 Bowl make Pad Thai](images/recipes/pad_thai.png)
 
@@ -1117,6 +1293,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/pad_thai.json`
 
 Cook this stock to finish Paneer Makhani.
 
+**Ingredients:** 2 Sugar, 1 Beetroot, 1 Cheese, 1 Milk Bottle, and 1 Bowl
+
 ![2 Sugar, 1 Beetroot, 1 Cheese, 1 Milk Bottle, and 1 Bowl make Paneer Curry Stock](images/recipes/uncooked_paneer_makhani.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/uncooked_paneer_makhani.json`
@@ -1127,6 +1305,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/uncooked_paneer_ma
 **Method:** Furnace - 15 seconds  
 **Food:** 10 nutrition (5 hunger icons) / 6 saturation  
 **Effects:** Regeneration I for 10 minutes. Returns the bowl after use.
+
+**Ingredients:** 1 Paneer Curry Stock
 
 ![1 Paneer Curry Stock cooks into Paneer Makhani](images/recipes/paneer_makhani.png)
 
@@ -1139,6 +1319,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/paneer_makhani.jso
 
 Cook this stock to finish Tonkotsu Ramen.
 
+**Ingredients:** 1 Brown Mushroom, 1 Dried Kelp, 1 Dough, 1 Porkchop, 1 Egg, and 1 Bowl
+
 ![1 Brown Mushroom, 1 Dried Kelp, 1 Dough, 1 Porkchop, 1 Egg, and 1 Bowl make Ramen Stock](images/recipes/uncooked_ramen.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/uncooked_ramen.json`
@@ -1149,6 +1331,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/uncooked_ramen.jso
 **Method:** Furnace - 15 seconds  
 **Food:** 10 nutrition (5 hunger icons) / 6 saturation  
 **Effects:** Haste II for 30 minutes. Returns the bowl after use.
+
+**Ingredients:** 1 Ramen Stock
 
 ![1 Ramen Stock cooks into Tonkotsu Ramen](images/recipes/ramen.png)
 
@@ -1161,6 +1345,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/ramen.json`
 **Food:** 8 nutrition (4 hunger icons) / 4.8 saturation  
 **Effects:** No additional lasting effect. Returns the bowl after use.
 
+**Ingredients:** 1 Braised Brown Mushroom, 1 Cooked Beef, 1 Milk Bottle, 1 Bowl, and 1 Dough
+
 ![1 Braised Brown Mushroom, 1 Cooked Beef, 1 Milk Bottle, 1 Bowl, and 1 Dough make Stroganoff](images/recipes/stroganoff.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/stroganoff.json`
@@ -1171,6 +1357,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/stroganoff.json`
 **Method:** Shapeless crafting  
 **Food:** 6 nutrition (3 hunger icons) / 3.6 saturation  
 **Effects:** Poison I for 5 minutes. Returns the bowl after use.
+
+**Ingredients:** 1 Red Mushroom, 1 Cooked Beef, 1 Milk Bottle, 1 Bowl, and 1 Dough
 
 ![1 Red Mushroom, 1 Cooked Beef, 1 Milk Bottle, 1 Bowl, and 1 Dough make Toadstool Stroganoff](images/recipes/red_mushroom_stroganoff.png)
 
@@ -1184,6 +1372,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/red_mushroom_strog
 **Food:** 4 nutrition (2 hunger icons) / 2.4 saturation each  
 **Effects:** Invisibility I for 5 minutes and Strength I for 3 minutes.
 
+**Ingredients:** 2 Warped Fungus, 1 Cheese, 3 Beetroot, and 3 Dough
+
 ![2 Warped Fungus, 1 Cheese, 3 Beetroot, and 3 Dough make 4 Warped Pizza](images/recipes/warped_pizza.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/warped_pizza.json`
@@ -1194,6 +1384,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/warped_pizza.json`
 **Method:** Shapeless crafting  
 **Food:** 6 nutrition (3 hunger icons) / 3.6 saturation  
 **Effects:** Invisibility I for 10 minutes. Returns the bowl after use.
+
+**Ingredients:** 1 Warped Fungus, 1 Cooked Beef, 1 Milk Bottle, 1 Bowl, and 1 Dough
 
 ![1 Warped Fungus, 1 Cooked Beef, 1 Milk Bottle, 1 Bowl, and 1 Dough make Warped Stroganoff](images/recipes/warped_stroganoff.png)
 
@@ -1208,6 +1400,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/warped_stroganoff.
 **Food:** 1 nutrition (0.5 hunger icon) / 0.6 saturation  
 **Effects:** Speed I for 30 seconds and the same maleffect cleanse as Bread. Returns the bottle after use.
 
+**Ingredients:** 1 Honey Bottle
+
 ![1 Honey Bottle cooks into Honey Ginger Tea](images/recipes/honey_ginger_tea.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/honey_ginger_tea.json`
@@ -1219,6 +1413,8 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/honey_ginger_tea_c
 **Method:** Shapeless crafting  
 **Food:** 3 nutrition (1.5 hunger icons) / 1.8 saturation  
 **Effects:** Speed I for 5 minutes. Returns the bottle after use.
+
+**Ingredients:** 1 Honey Bottle, 1 Brown Mushroom, 1 Sweet Berries, and 1 Sugar
 
 ![1 Honey Bottle, 1 Brown Mushroom, 1 Sweet Berries, and 1 Sugar make Mead](images/recipes/mead.png)
 
