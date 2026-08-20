@@ -2,7 +2,7 @@
 
 **Edition:** Java  
 **Version:** 26.2 Paper  
-**Last verified:** 2026-08-16 (Kitchen + Hybrids + Alloys + Fisher + Abbey branches, Together loops, crop replant)
+**Last verified:** 2026-08-17 (Together share via co-op group; Kitchen + Hybrids + Alloys + Fisher + Abbey branches, Together loops, crop replant)
 **Applies to:** `plugins/Quests/storage/quests.yml` (branched progression)  
 **Plugin guide:** [`mod-guides/quests-classic.md`](../mod-guides/quests-classic.md)
 
@@ -15,7 +15,7 @@ Full catalog: **296** quests - starter + **166** personal tips across **15** bra
 | Track | How it starts | Progress |
 |-------|---------------|----------|
 | **Personal** (15 branches) | Take **Gotta Start Somewhere**, break 1 short grass | Yours only; finishing auto-gives the next tip in that branch |
-| **Global Kill / Mine** | Given when you finish the starter | Shared; 3 tiers per mob/block, then loops back to root |
+| **Global Kill / Mine** | Given when you finish the starter | Shared with everyone **online** in the group; 3 tiers per mob/block, then loops back to root |
 
 Locked personal quests are **hidden** from `/quests list` (`ignore-locked-quests: true`) until unlocked. You do not browse ahead - finish the current tip and the next one is given.
 
@@ -349,7 +349,7 @@ Source: `dev/abbey-chain.json`
 
 ## Global Kill path
 
-Shared progress (`share-progress-level: 1`). One tip active at a time. Tier counts scale by mob difficulty. Full chain order:
+Counts for everyone **online** in the group. One tip active at a time. Tier counts scale by mob difficulty. Full chain order:
 
 | # | Mob | Tier 1 | Tier 2 | Tier 3 |
 |---|-----|--------|--------|--------|
@@ -448,7 +448,7 @@ Source: `server/plugins/Quests/storage/quests.yml`
 
 ## Global Mine path
 
-Shared progress. Commons use high break counts (**2048 / 8192 / 32768** for dirt-netherrack band). One tip active at a time.
+Counts for everyone **online** in the group. Commons use high break counts (**2048 / 8192 / 32768** for dirt-netherrack band). One tip active at a time.
 
 | # | Block | Tier 1 | Tier 2 | Tier 3 |
 |---|-------|--------|--------|--------|

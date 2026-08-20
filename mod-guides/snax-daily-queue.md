@@ -3,7 +3,7 @@
 **Edition:** Java  
 **Version:** 26.2 Paper  
 **Last verified:** 2026-08-12  
-**Applies to:** `SnaxDailyQueue` (`SnaxDailyQueue.jar` v1.0.2)  
+**Applies to:** `SnaxDailyQueue` (`SnaxDailyQueue.jar` v1.0.5)  
 **Host:** Cybrancee **Stone** (4GB) — see `dev/host-profile.md`
 
 ## Summary
@@ -87,6 +87,13 @@ powershell -NoProfile -File dev/scripts/gen-snax-daily-queue-boards.ps1
 `gen-daily-quests.ps1` calls this at the end so board swaps stay in sync with Quests YAML and CommandPanels `/qd` panels.
 
 Source: `dev/scripts/gen-snax-daily-queue-boards.ps1`  
+Source: `dev/scripts/gen-daily-quests.ps1`
+
+### Break-block aliases (Quests Classic)
+
+Quests 5.3.2 counts each `break-block-names` row separately (AND logic). When a quest targets **cobblestone**, **dirt**, or **short grass**, alias blocks (**stone**, **grass block**, **tall grass**) count toward the primary material. SnaxDailyQueue applies this for **any active quest** (personal ladder, personal/shared dailies, Together mine chains) and dispatches party share the same way Quests does for normal breaks.
+
+Source: `dev/snax-daily-queue/src/main/java/com/snaxcraft/dailyqueue/DailyBreakAliasListener.java`  
 Source: `dev/scripts/gen-daily-quests.ps1`
 
 ### Deploy checklist (with Quests changes)

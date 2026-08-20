@@ -1,6 +1,6 @@
 # snaxcraft dailies + Quest Point shop
 
-**Last verified:** 2026-08-16 (9-day cycle, 108 dailies, harvest replant, bread smelt, Kitchen chain)  
+**Last verified:** 2026-08-17 (shared dailies count for the online group; 9-day cycle, 108 dailies, harvest replant, bread smelt, Kitchen chain)  
 **Applies to:** Paper 26.2 / Quests Classic 5.3.2 / CommandPanels / TAB  
 **Edition:** Java only
 
@@ -31,7 +31,7 @@ Each command opens a different list:
 ## How dailies work
 
 - **Reset:** every day at **7:00 PM Pacific** (PST/PDT).
-- **Personal (8) / Shared (4):** same board for everyone; shared uses Together-style progress sharing.
+- **Personal (8) / Shared (4):** same board for everyone; shared counts for everyone **online** in the group (same as Together).
 - **Pools:** 72 personal / 36 shared on a fixed **9-day** board cycle.
 - **Rewards:** QP + exp + items scaled to difficulty (easy/medium/hard/shared) — below `/qp` god-roll.
 - **Daily QP:** easy **6** · medium **10** · hard **16** · shared **24**.

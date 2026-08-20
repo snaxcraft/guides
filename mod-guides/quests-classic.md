@@ -2,7 +2,7 @@
 
 **Edition:** Java  
 **Version:** 26.2 Paper  
-**Last verified:** 2026-08-16  
+**Last verified:** 2026-08-17  
 **Applies to:** `Quests` (`Quests-5.3.2.jar` — PikaMug **Quests Classic**)  
 **Host:** Cybrancee **Stone** (4GB) — see `dev/host-profile.md`
 
@@ -20,7 +20,7 @@ Source: `dev/mod-list.md`
 
 **GUI:** [`QuestsGUI`](https://browsit.gitbook.io/questsgui/) **2.2.1** — journal `/q` chest; list GUI off. **SnaxQuestList** owns `/ql` (personal then Together).
 
-**Player flow:** Take **Gotta Start Somewhere** (break 1 short grass) → personal roots + **Together - …** global roots given (starter rewards + `give-at-login` on the two path roots). Next steps via reward `questadmin give`. No JoinCommands.
+**Player flow:** Take **Gotta Start Somewhere** (break 1 short grass) → personal roots + **Together - …** global roots given (starter rewards). Together roots stay `give-at-login: false`. Shared progress uses **Parties** party `snax`, not login-give. Next steps via reward `questadmin give`. No JoinCommands.
 
 Source: https://browsit.gitbook.io/questsgui/  
 Source: https://pikamug.gitbook.io/quests/beginner/options.md  
@@ -54,7 +54,7 @@ Source: `server/commands.yml`
 
 ### How it feels on snaxcraft
 
-1. Take **Gotta Start Somewhere**, break 1 short grass — personal branch tips **and** global Kill/Mine roots are given (shared globals; roots also use `give-at-login` after unlock).  
+1. Take **Gotta Start Somewhere**, break 1 short grass -- personal branch tips **and** global Kill/Mine roots are given. Together/shared dailies copy only to online members of party `snax`.  
 2. Locked personal quests stay hidden until unlocked; finishing auto-gives the next tip.  
 3. Track with `/quest`. Vanilla `L` advancements stay separate.  
 4. Full per-quest walkthrough: [`guide/snaxcraft-quests.md`](../guide/snaxcraft-quests.md).
@@ -126,8 +126,9 @@ Source: https://pikamug.gitbook.io/quests/setup/configuration.md
 1. After YAML edits prefer regenerating with `dev/scripts/gen-quests-progression.ps1` then `gen-daily-quests.ps1` (backs up `quests.yml`). Progression rebuilds ladder + Together and drops generated dailies, so the daily generator must run second to merge all 108 back.
 2. `/questadmin reload` or full restart. ItemStacks need `v: 4903`. Place stages need `place-block-durability` beside `place-block-names`, or Quests rejects the whole quest. Crop harvest/plant stages need `ignore-block-replace: false` or replanting undoes break progress (Quests 5.3.2 default is true). On a crop, `break-block-durability` is the **growth age** matched exactly — a harvest stage needs the mature age (7 for wheat/carrots/potatoes), not `0`.
 3. Do **not** install JoinCommands (Paper 26.2 unsupported). Globals unlock from the starter.
-4. Branch order source of truth: `dev/quests-branch-map.json`. Global chains: `dev/quests-global-chains.json`. Reward tables: `dev/quest-item-rewards.json`. `/qc` panels: `dev/scripts/gen-qc-panels.ps1`.
-5. `/qc` done icons use `pa data overwrite <player> snax_qc_<id> 1` on complete (CommandPanels 4.2.1; not PAPI `has_completed`). Past completes: `dev/scripts/backfill-qc-cp-data.ps1` then paste console output. Keep the PAPI Quests expansion updated (`/papi ecloud download Quests`) for Tab/compass placeholders.
+4. Together + `dailyS*` use `share-progress-level: 1` and must keep the Parties hook (`use-parties-plugin` not false). Personal ladder/`dailyP*` set `use-parties-plugin: false` and `share-progress-level: 0`. Ops for the co-op party: [`parties.md`](parties.md).
+5. Branch order source of truth: `dev/quests-branch-map.json`. Global chains: `dev/quests-global-chains.json`. Reward tables: `dev/quest-item-rewards.json`. `/qc` panels: `dev/scripts/gen-qc-panels.ps1`.
+6. `/qc` done icons use `pa data overwrite <player> snax_qc_<id> 1` on complete (CommandPanels 4.2.1; not PAPI `has_completed`). Past completes: `dev/scripts/backfill-qc-cp-data.ps1` then paste console output. Keep the PAPI Quests expansion updated (`/papi ecloud download Quests`) for Tab/compass placeholders.
 
 Source: `dev/scripts/gen-quests-progression.ps1`  
 Source: `dev/scripts/gen-daily-quests.ps1`  
@@ -140,7 +141,8 @@ Source: https://pikamug.gitbook.io/quests/setup/configuration.md
 | `/questadmin` / `/qa` | Admin help |
 | `/questadmin reload` | Reload plugin data |
 | `/questadmin give <player> <quest>` | Force-take |
-| `/questadmin finish <player> <quest>` | Force-complete |
+| `/questadmin quit <player> <quest>` | Force-quit (use to drop a stale Together tip) |
+| `/questadmin finish <player> <quest>` | Force-complete (pays rewards) |
 | `/questadmin reset <player>` | Wipe that player’s Quests data |
 | `/quests editor` | Create/edit quests (ops / `quests.editor.*`) |
 
@@ -189,8 +191,9 @@ Source: `server/plugins/Quests/storage/quests.yml`
 
 ## See also
 
-- [`guide/snaxcraft-quests.md`](../guide/snaxcraft-quests.md) — our challenge ladder  
-- [`questsbar.md`](questsbar.md) — boss-bar progress; `/track` `/qt`; `/kit quest`  
+- [`guide/snaxcraft-quests.md`](../guide/snaxcraft-quests.md) -- our challenge ladder  
+- [`parties.md`](parties.md) -- co-op party `snax` for Together / shared dailies  
+- [`questsbar.md`](questsbar.md) -- boss-bar progress; `/track` `/qt`; `/kit quest`  
 - [`mod-guides/essentialsx.md`](essentialsx.md) — homes / kits (includes `/kit quest`)  
 - [`dev/mod-list.md`](../dev/mod-list.md) — installed plugins  
 - Author docs: https://pikamug.gitbook.io/quests/  

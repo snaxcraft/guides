@@ -2,7 +2,7 @@
 
 **Edition:** Java  
 **Version:** 26.2 Paper  
-**Last verified:** 2026-08-10  
+**Last verified:** 2026-08-19  
 **Applies to:** `BlueMap` (`bluemap-5.23-paper.jar`)  
 **Host:** Cybrancee **Stone** (4GB) — see `dev/host-profile.md`
 
@@ -86,14 +86,26 @@ Configs under `plugins/BlueMap/maps/`:
 |-------------|-----------|--------------|
 | `world.conf` | `minecraft:overworld` | world (overworld) |
 | `world_the_nether.conf` | `minecraft:the_nether` | world (the_nether) |
+| `world_the_nether_full.conf` | `minecraft:the_nether` | world (the_nether - full height) |
 | `world_the_end.conf` | `minecraft:the_end` | world (the_end) |
 
-Map IDs for commands usually match the filename without `.conf` (e.g. `world`, `world_the_nether`, `world_the_end`). Confirm with `/bluemap maps`.
+Map IDs for commands usually match the filename without `.conf` (e.g. `world`, `world_the_nether`, `world_the_nether_full`, `world_the_end`). Confirm with `/bluemap maps`.
+
+| Nether map | Y range on the web map | Live updates |
+|------------|------------------------|--------------|
+| `world_the_nether` | Hides Y 90–127 (bedrock ceiling) so tunnels are visible | Normal auto-update |
+| `world_the_nether_full` | Full height (ceiling and high builds included) | Freeze after first render; catch-up only when nobody is online |
+
+Switch maps in the web UI dropdown. Camera position is kept when switching maps of the same world.
+
+**Offline first render / catch-up (Stone 4GB):** with 0 players online: `bluemap stop` → freeze `world`, `world_the_nether`, and `world_the_end` → `bluemap start` so only `world_the_nether_full` renders → when idle, `bluemap freeze world_the_nether_full` and unfreeze the other three. If someone joins mid-render, `bluemap stop` and resume later.
 
 Source: `server/plugins/BlueMap/maps/world.conf`  
 Source: `server/plugins/BlueMap/maps/world_the_nether.conf`  
+Source: `server/plugins/BlueMap/maps/world_the_nether_full.conf`  
 Source: `server/plugins/BlueMap/maps/world_the_end.conf`  
-Source: https://bluemap.bluecolored.de/wiki/getting-started/Commands.html
+Source: https://bluemap.bluecolored.de/wiki/getting-started/Commands.html  
+Source: https://bluemap.bluecolored.de/wiki/customization/Masks.html
 
 ### Useful commands
 
