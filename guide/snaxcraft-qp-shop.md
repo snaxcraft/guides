@@ -2,14 +2,14 @@
 
 **Edition:** Java  
 **Version:** 26.2 Paper  
-**Last verified:** 2026-08-14  
+**Last verified:** 2026-08-20  
 **Applies to:** CommandPanels `/qp`
 
 ## How to buy
 
 Run `/qp`. The menu spends Quests Classic **Quest Points (QP)**, not Vault money. Your balance is shown in the shop. If you cannot afford an item, the purchase is cancelled and chat says `Not enough Quest Points (need N).`
 
-The root categories are **Eggs, Spawners, Gear, Enchanting, Potions, and Blocks**.
+The root categories are **Eggs, Spawners, Gear, Enchanting, Potions, Blocks, and Loot**.
 
 Source: `server/plugins/CommandPanels/panels/qp-shop.yml`
 Source: `server/plugins/CommandPanels/panels/qp-*.yml`
@@ -99,13 +99,45 @@ Many entries are blocks normally collected with Silk Touch. Budding amethyst is 
 Source: `dev/qp-shop-extra.json`
 Source: https://minecraft.wiki/w/Silk_Touch
 
+## Loot
+
+Loot is soft-sink stock for finds that are not craftable in survival on this version. Horse spawn eggs stay under Eggs; this category does not give a horse.
+
+### Mount gear
+
+| QP | Item |
+|---:|------|
+| 240 | Iron Horse Armor |
+| 340 | Golden Horse Armor |
+| 560 | Diamond Horse Armor |
+
+### Adventure loot
+
+| QP | Item |
+|---:|------|
+| 200 | Nautilus Shell |
+| 300 | Echo Shard |
+| 480 | Heart of the Sea |
+| 760 | Totem of Undying |
+
+Saddle, leather horse armor, name tags, and leads are not sold here because they are craftable. Music discs, goat horns, and netherite horse armor are also not sold.
+
+Source: `server/plugins/CommandPanels/panels/qp-loot.yml`
+Source: `server/plugins/CommandPanels/panels/qp-loot-mount.yml`
+Source: `server/plugins/CommandPanels/panels/qp-loot-adventure.yml`
+Source: https://minecraft.wiki/w/Saddle
+Source: https://minecraft.wiki/w/Horse_Armor
+Source: https://minecraft.wiki/w/Name_Tag
+
 ## Not sold
 
-The shop does **not** sell structure blocks, command blocks, barriers, bedrock, debug sticks, budding amethyst, Potion of Luck, or splash/lingering potions.
+The shop does **not** sell structure blocks, command blocks, barriers, bedrock, debug sticks, budding amethyst, Potion of Luck, splash/lingering potions, saddles, leather horse armor, name tags, leads, music discs, goat horns, or netherite horse armor.
 
 Source: `server/plugins/CommandPanels/panels/qp-*.yml`
 Source: `dev/qp-shop-extra.json`
 Source: https://minecraft.wiki/w/Potion_of_Luck
+Source: https://minecraft.wiki/w/Saddle
+Source: https://minecraft.wiki/w/Name_Tag
 
 ## See also
 

@@ -5,7 +5,7 @@
 **Content bundle:** SnaxCraft Content
 **Role:** SnaxKitchen gates Kitchen recipe ingredients; SnaxCraft Content supplies all custom datapack and resource-pack features
 **License:** Matcha Flavoured assets and recipes by klei_wright, CC-BY-NC-SA 4.0  
-**Last verified:** 2026-08-14  
+**Last verified:** 2026-08-20  
 **Host:** Cybrancee **Stone** (4GB) -- see `dev/host-profile.md`
 
 ## Purpose
@@ -53,7 +53,21 @@ Source: `server/plugins/CommandPanels/panels/qp-gear-alloys.yml`
 
 ## Quest integration
 
-Kitchen chain quests track vanilla item IDs (not custom_data) to avoid conflicts with Quests Classic limitations. Ask-messages provide crafting instructions for custom recipes.
+Kitchen / daily **smelt** quests use Quests Classic `items-to-smelt` (result material).
+
+| Cook kind | Stations that advance Quests |
+|-----------|------------------------------|
+| Food (steak, bread, cooked meats) | Furnace, smoker, campfire |
+| Materials (ingots, gravel, sand, glass) | Furnace, blast furnace |
+
+Quests natively counts result takes from furnace / smoker / blast-furnace GUIs. Campfires have no result GUI, so **SnaxKitchen** credits `SMELT_ITEM` when food finishes cooking on a campfire the player recently used.
+
+Smokers cook raw meats/fish into `cooked_*` first. **Charred meat/fish** is a second smoke: put already-cooked meat or fish back in the smoker. Potatoes still char from raw.
+
+Quests Classic rejects snax foods that carry lore against plain `items-to-smelt` stacks. SnaxKitchen credits a meta-less copy when you take snax food from a furnace/smoker result (and when campfire cooking finishes), so Kitchen/daily food smelt quests advance.
+
+Source: `server/plugins/Quests/storage/quests.yml`
+Source: `dev/snax-kitchen/src/main/java/com/snaxcraft/kitchen/FoodCookQuestListener.java`
 
 ## Performance notes
 
@@ -74,12 +88,12 @@ After a full restart, test the following on the host:
 1. Run `/reload` and confirm chat shows `[snax] kitchen datapack loaded`.
 2. Craft flour from 3 wheat.
 3. Craft dough from flour plus egg, or from flour plus a water bottle.
-4. Smelt dough into bread.
-5. Eat cooked steak while hungry and confirm it restores hunger.
-6. Blast cobblestone into gravel, then blast gravel into sand.
+4. Smelt dough into bread (furnace, smoker/naan path, or campfire).
+5. Cook raw beef into steak in a **furnace, smoker, or campfire**; confirm Kitchen / daily steak smelt progress.
+6. Blast cobblestone into gravel, then blast gravel into sand (blast furnace; furnace also counts for Quests if the recipe runs there).
 7. Craft a shulker box from 8 leather around a chest.
 8. Confirm `Kitchen - Plant Wheat` advances when wheat is planted.
-9. Confirm `Kitchen - Bake Bread` advances when dough is smelted into bread.
+9. Confirm `Kitchen - Bake Bread` advances when dough is cooked into bread.
 10. Inspect every `snaxKitchen*` quest in `server/plugins/Quests/storage/quests.yml`; each must contain `give-at-login: false` and `share-progress-level: 0`.
 
 ## License and attribution

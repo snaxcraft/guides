@@ -1,8 +1,8 @@
-﻿# snaxcraft kitchen recipes
+# snaxcraft kitchen recipes
 
 **Edition:** Java  
 **Version:** 26.2 Paper  
-**Last verified:** 2026-08-17
+**Last verified:** 2026-08-20
 **Applies to:** snaxcraft server content
 
 ## How to use this cookbook
@@ -342,11 +342,11 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/brasied_warped_fun
 ### Charred Fish
 
 **Makes:** 1 Charred Fish  
-**Method:** Smoker - 5 seconds  
+**Method:** Smoker - 5 seconds (put already-cooked fish in the smoker)  
 **Food:** 1 nutrition (0.5 hunger icon) / 0.6 saturation  
 **Effects:** No additional lasting effect.
 
-**Ingredients:** 1 Tropical Fish, Pufferfish, Cod, or Salmon
+**Ingredients:** 1 Cooked Tropical Fish result, Cooked Cod, or Cooked Salmon (smoke cooked fish again)
 
 ![1 Tropical Fish cooks into Charred Fish](images/recipes/charred_fish.png)
 
@@ -355,11 +355,11 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/charred_fish.json`
 ### Charred Meat
 
 **Makes:** 1 Charred Meat  
-**Method:** Smoker - 5 seconds  
+**Method:** Smoker - 5 seconds (put already-cooked meat in the smoker)  
 **Food:** 1 nutrition (0.5 hunger icon) / 0.6 saturation  
 **Effects:** No additional lasting effect.
 
-**Ingredients:** 1 Rabbit, Chicken, Beef, Porkchop, or Mutton
+**Ingredients:** 1 Cooked Beef, Cooked Chicken, Cooked Porkchop, Cooked Mutton, or Cooked Rabbit
 
 ![1 Rabbit cooks into Charred Meat](images/recipes/charred_meat.png)
 
@@ -381,7 +381,7 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/charred_potato.jso
 ### Cooked Beef
 
 **Makes:** 1 Cooked Beef from 1 Raw Beef  
-**Stations:** Furnace - 5 seconds; campfire - 10 seconds  
+**Stations:** Furnace - 5 seconds; smoker - 5 seconds; campfire - 10 seconds  
 **Food:** 8 nutrition (4 hunger icons) / 12.8 saturation  
 **Effects:** No additional lasting effect.
 
@@ -390,12 +390,13 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/charred_potato.jso
 ![1 Beef cooks into Cooked Beef](images/recipes/cooked_beef.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_beef.json`
+Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_beef_smoking.json`
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_beef_campfire.json`
 
 ### Cooked Chicken
 
 **Makes:** 1 Cooked Chicken from 1 Raw Chicken  
-**Stations:** Furnace - 5 seconds; campfire - 10 seconds  
+**Stations:** Furnace - 5 seconds; smoker - 5 seconds; campfire - 10 seconds  
 **Food:** 2 nutrition (1 hunger icon) / 1.2 saturation  
 **Effects:** No additional lasting effect.
 
@@ -404,12 +405,13 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_beef_campfi
 ![1 Chicken cooks into Cooked Chicken](images/recipes/cooked_chicken.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_chicken.json`
+Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_chicken_smoking.json`
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_chicken_campfire.json`
 
 ### Cooked Cod
 
 **Makes:** 1 Cooked Cod from 1 Raw Cod  
-**Stations:** Furnace - 5 seconds; campfire - 10 seconds  
+**Stations:** Furnace - 5 seconds; smoker - 5 seconds; campfire - 10 seconds  
 **Food:** 2 nutrition (1 hunger icon) / 1.2 saturation  
 **Effects:** No additional lasting effect.
 
@@ -418,12 +420,13 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_chicken_cam
 ![1 Cod cooks into Cooked Cod](images/recipes/cooked_cod.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_cod.json`
+Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_cod_smoking.json`
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_cod_campfire.json`
 
 ### Cooked Mutton
 
 **Makes:** 1 Cooked Mutton from 1 Raw Mutton  
-**Stations:** Furnace - 5 seconds; campfire - 10 seconds  
+**Stations:** Furnace - 5 seconds; smoker - 5 seconds; campfire - 10 seconds  
 **Food:** 2 nutrition (1 hunger icon) / 1.2 saturation  
 **Effects:** No additional lasting effect.
 
@@ -432,12 +435,13 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_cod_campfir
 ![1 Mutton cooks into Cooked Mutton](images/recipes/cooked_mutton.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_mutton.json`
+Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_mutton_smoking.json`
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_mutton_campfire.json`
 
 ### Cooked Porkchop
 
 **Makes:** 1 Cooked Porkchop from 1 Raw Porkchop  
-**Stations:** Furnace - 5 seconds; campfire - 10 seconds  
+**Stations:** Furnace - 5 seconds; smoker - 5 seconds; campfire - 10 seconds  
 **Food:** 2 nutrition (1 hunger icon) / 1.2 saturation  
 **Effects:** No additional lasting effect.
 
@@ -446,12 +450,13 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_mutton_camp
 ![1 Porkchop cooks into Cooked Porkchop](images/recipes/cooked_pork.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_pork.json`
+Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_pork_smoking.json`
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_pork_campfire.json`
 
 ### Cooked Pufferfish
 
 **Makes:** 1 Cooked Pufferfish from 1 Pufferfish  
-**Stations:** Furnace - 5 seconds; campfire - 10 seconds  
+**Stations:** Furnace - 5 seconds; smoker - 5 seconds; campfire - 10 seconds  
 **Food:** 2 nutrition (1 hunger icon) / 1.2 saturation  
 **Effects:** Conduit Power I for 30 seconds.
 
@@ -460,12 +465,13 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_pork_campfi
 ![1 Pufferfish cooks into Cooked Pufferfish](images/recipes/cooked_pufferfish.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_pufferfish.json`
+Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_pufferfish_smoking.json`
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_pufferfish_campfire.json`
 
 ### Cooked Rabbit
 
 **Makes:** 1 Cooked Rabbit from 1 Raw Rabbit  
-**Stations:** Furnace - 5 seconds; campfire - 10 seconds  
+**Stations:** Furnace - 5 seconds; smoker - 5 seconds; campfire - 10 seconds  
 **Food:** 2 nutrition (1 hunger icon) / 1.2 saturation  
 **Effects:** No additional lasting effect.
 
@@ -474,12 +480,13 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_pufferfish_
 ![1 Rabbit cooks into Cooked Rabbit](images/recipes/cooked_rabbit.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_rabbit.json`
+Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_rabbit_smoking.json`
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_rabbit_campfire.json`
 
 ### Cooked Salmon
 
 **Makes:** 1 Cooked Salmon from 1 Raw Salmon  
-**Stations:** Furnace - 5 seconds; campfire - 10 seconds  
+**Stations:** Furnace - 5 seconds; smoker - 5 seconds; campfire - 10 seconds  
 **Food:** 3 nutrition (1.5 hunger icons) / 1.8 saturation  
 **Effects:** No additional lasting effect.
 
@@ -488,13 +495,14 @@ Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_rabbit_camp
 ![1 Salmon cooks into Cooked Salmon](images/recipes/cooked_salmon.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_salmon.json`
+Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_salmon_smoking.json`
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_salmon_campfire.json`
 
 ### Cooked Tropical Fish
 
 Cooking 1 Tropical Fish makes 1 Cooked Cod.
 
-**Stations:** Furnace - 5 seconds; campfire - 10 seconds  
+**Stations:** Furnace - 5 seconds; smoker - 5 seconds; campfire - 10 seconds  
 **Food:** 2 nutrition (1 hunger icon) / 1.2 saturation  
 **Effects:** No additional lasting effect.
 
@@ -503,6 +511,7 @@ Cooking 1 Tropical Fish makes 1 Cooked Cod.
 ![1 Tropical Fish cooks into Cooked Cod](images/recipes/cooked_tropical_fish.png)
 
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_tropical_fish.json`
+Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_tropical_fish_smoking.json`
 Source: `dev/snaxcraft-content-pack/datapack/data/snax/recipe/cooked_tropical_fish_campfire.json`
 
 ### Dried Kelp
