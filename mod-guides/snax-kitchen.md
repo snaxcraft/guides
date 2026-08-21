@@ -62,7 +62,7 @@ Kitchen / daily **smelt** quests use Quests Classic `items-to-smelt` (result mat
 
 Quests natively counts result takes from furnace / smoker / blast-furnace GUIs. Campfires have no result GUI, so **SnaxKitchen** credits `SMELT_ITEM` when food finishes cooking on a campfire the player recently used.
 
-Smokers cook raw meats/fish into `cooked_*` first. **Charred meat/fish** is a second smoke: put already-cooked meat or fish back in the smoker. Potatoes still char from raw.
+Smokers cook raw meats/fish/potato into `cooked_*` / baked first. **Charred meat, fish, and potato** are a second smoke: put the already-cooked food back in the smoker.
 
 Quests Classic rejects snax foods that carry lore against plain `items-to-smelt` stacks. SnaxKitchen credits a meta-less copy when you take snax food from a furnace/smoker result (and when campfire cooking finishes), so Kitchen/daily food smelt quests advance.
 
