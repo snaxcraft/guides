@@ -2,7 +2,7 @@
 
 **Edition:** Java  
 **Version:** 26.2 Paper  
-**Last verified:** 2026-08-20
+**Last verified:** 2026-08-21
 **Applies to:** snaxcraft server content
 
 ## How to use this cookbook

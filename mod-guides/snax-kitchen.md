@@ -5,7 +5,7 @@
 **Content bundle:** SnaxCraft Content
 **Role:** SnaxKitchen gates Kitchen recipe ingredients; SnaxCraft Content supplies all custom datapack and resource-pack features
 **License:** Matcha Flavoured assets and recipes by klei_wright, CC-BY-NC-SA 4.0  
-**Last verified:** 2026-08-20  
+**Last verified:** 2026-08-21  
 **Host:** Cybrancee **Stone** (4GB) -- see `dev/host-profile.md`
 
 ## Purpose
@@ -15,7 +15,8 @@ SnaxCraft Content is the combined datapack and resource pack for custom food, Qo
 ## Key recipes
 
 - **Flour from wheat:** Mill wheat into flour using custom recipes
-- **Jam from berries:** Craft sweet berry jam (shows as poisonous potato icon but renamed)
+- **Jam from berries:** Craft sweet berry jam (poisonous-potato carrier with snax model)
+- **Cheese / Milk Bottle:** Cookie and beetroot-soup carriers with snax models (Matcha painted those vanilla textures; we copy them under `snax:` so plain cookies/soup stay vanilla)
 - **Curry cooking:** Smelt uncooked curry into cooked meals
 - **Gravel from cobble:** Blast furnace cobblestone/deepslate into gravel
 - **Sand from gravel:** Blast gravel into sand
